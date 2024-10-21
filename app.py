@@ -1,9 +1,6 @@
 import streamlit as st
 from task_manager import TaskManager
 
-if __name__ == '__main__':
-    st.run(port=8501)  # Explicitly specify the port if needed
-
 # Streamlit App Layout
 st.title("Simple To-Do List 📝")
 st.markdown("---")  # Horizontal line for separation
@@ -41,9 +38,6 @@ with st.form("task_form"):
             # Clear input fields in session state
             st.session_state['title'] = ""
             st.session_state['description'] = ""
-
-            # Instead of rerun, we can just refresh the displayed tasks
-
 
 # Fetch and display tasks
 st.subheader("Your Tasks")
