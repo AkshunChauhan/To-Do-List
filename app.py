@@ -1,6 +1,9 @@
 import streamlit as st
 from task_manager import TaskManager
 
+if __name__ == '__main__':
+    st.run(port=8501)  # Explicitly specify the port if needed
+
 # Streamlit App Layout
 st.title("Simple To-Do List 📝")
 st.markdown("---")  # Horizontal line for separation
