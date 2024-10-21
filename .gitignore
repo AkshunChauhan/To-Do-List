@@ -33,3 +33,6 @@ ENV/
 *.egg-info/
 dist/
 build/
+# Ignore the .streamlit directory
+.streamlit/
+
