@@ -1,7 +1,12 @@
 import os
+from dotenv import load_dotenv
 import pymongo
+
+# Load environment variables from .env file
+load_dotenv()
+
 # MongoDB Configuration
 def get_mongo_client():
     # MongoDB Atlas connection string from environment variable
-    mongo_uri = os.getenv("mongodb+srv://akshunchauhan099:FegZInm6MXJmc4hi@cluster0.b0kvq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+    mongo_uri = os.getenv("MONGODB_URI")
     return pymongo.MongoClient(mongo_uri)
