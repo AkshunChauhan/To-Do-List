@@ -1,38 +1,39 @@
-# Python
+# Python bytecode and virtual environments
 __pycache__/
 *.py[cod]
-*$py.class
-
-# Virtual Environment
-venv/
+*.pyo
+*.pyd
 env/
+venv/
 ENV/
-.venv/
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# VSCode settings
-.vscode/
-
-# Environment Variables
+# Environment and secrets
 .env
+.streamlit/secrets.toml
 
-# Streamlit specific
-/.streamlit/
-
-# Database files
-*.db
+# Logs and database
+*.log
 *.sqlite3
 
-# Logs
-*.log
+# Docker-related files
+.dockerignore
+*.env
 
-# Distribution / Packaging
+# IDE/Editor-specific files
+.vscode/
+.idea/
+
+# OS-specific files
 .DS_Store
-*.egg-info/
-dist/
-build/
-# Ignore the .streamlit directory
-.streamlit/
+Thumbs.db
+Desktop.ini
 
+# Build artifacts
+build/
+dist/
+
+# Cache
+.cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints

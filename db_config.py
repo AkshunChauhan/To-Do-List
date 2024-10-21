@@ -1,8 +1,6 @@
+import os
 import pymongo
-import streamlit as st
 
-# MongoDB Configuration
 def get_mongo_client():
-    # MongoDB Atlas connection string from Streamlit secrets
-    mongo_uri = st.secrets["mongodb"]["uri"]
+    mongo_uri = os.getenv("MONGO_URL")
     return pymongo.MongoClient(mongo_uri)
