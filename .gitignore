@@ -8,8 +8,8 @@ venv/
 ENV/
 
 # Environment and secrets
-.env
-.streamlit/secrets.toml
+# .env
+# .streamlit/secrets.toml
 
 # Logs and database
 *.log
