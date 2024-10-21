@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VSCode settings
+.vscode/
+
+# Environment Variables
+.env
+
+# Streamlit specific
+/.streamlit/
+
+# Database files
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# Distribution / Packaging
+.DS_Store
+*.egg-info/
+dist/
+build/
